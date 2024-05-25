@@ -9,61 +9,43 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" /> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        header{
-            background-image: url("bike4.png");
-            /* background-size: contain; */
-            background-repeat: no-repeat;
-            background-position: right ;
-            /* border: 2px solid red; */
-            box-sizing: border-box;
-
+        .header-wrapper {
+            background-image: linear-gradient(to bottom right, #264653, rgb(45, 122, 122));
         }
     </style>
+
 </head>
 
 <body>
 
-
-    <div class="header-wrapper bg-gradient-to-br from-[#264653] to-slate-600 text-[#FFFFFF] lg:px-[10rem]   ">
-        <div class="img-container  ">
-            <!-- <img src=" bike4.png" alt="" class="absolute md:right-1   "> -->
-        </div>
-
-        <header class="lg:px-[100px] px-2">
-
-            <nav class="flex md:justify-end ">
-                <div class="empty "></div>
-                <ul class="flex justify-between md:justify-around md:w-[40%] w-[80%] ">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contract</a></li>
+    <div class="header-wrapper">
+        <header class="border-4 md:px-[10%]">
+            <nav class="flex md:justify-end  text-white">
+                <ul class="flex md:justify-around w-[100%] justify-evenly md:items-center md:w-[40%] lg:w-[30%] ">
+                    <li class=""><a href="#">Home</a></li>
+                    <li class=""><a href="#">Shop</a></li>
+                    <li class=""><a href="#">News</a></li>
+                    <li class=""><a href="#">Contact</a></li>
                 </ul>
-                <div class="login-btn flex justify-end   w-[30%] md:w-[10%] ">
-                    <button class="bttn">Login</button>
-                </div>
+                <div class="login-btn flex w-[10%]  items-center justify-end"><button class="bg-[#E76F51]
+                    px-3.5 hover:bg-[red]"> Login</button></div>
             </nav>
-            <div class="header-content flex flex-col lg:w-[60%] w-[100%]">
-                <p class="w-[36ch] h-[80px] py-4 lg:text-base text-xs ">Computer-controlled
-                    digital
-                    transistorized with electronic advance</p>
-                <h1 class="w-fit h-[60px] font-bold text-3xl leading-8 ">Honda CBR 300R</h1>
-                <p class="w-[55%] h-[] py-4 text-xs lg:text-base">Amet minim mollit non deserunt ullamco est sit aliqua
-                    dolor do amet sint. Velit
-                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                <div class="header-content-btn">
-                    <button class="bg-[#E76F51]  rounded p-3">Purchase</button>
+            <div class="header-content  flex  md:justify-around md:items-center  flex-col md:flex-row items-center  text-white">
+                <div class="header-content-wrapper md:w-[48%]  flex flex-col gap-3 border-4 ">
+                    <h1 class="w-[80%]">Computer-controlled digital transistorized with electronic advance</h1>
+                <h1 class="text-4xl font-semibold">Honda CBR 300R</h1>
+                <p class="w-[80%]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <div class="purchase"><button class="bg-[#E76F51] rounded py-1 px-2">Purchase</button></div>
+                </div>
+                <div class="img-container  ">
+                    <img src="bike4.png" alt="">
                 </div>
             </div>
         </header>
     </div>
 
-    <body>
 
-    </body>
+</body>
 
 </html>
